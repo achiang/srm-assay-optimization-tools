@@ -25,10 +25,24 @@ Using the file navigator in your browser's tab, navigate to this repo, and
 launch the `SRM_Assay_Optimization.ipynb` notebook.
 
 
+Maintenance
+-----------
+Be sure to update your conda environment after every `git pull`. Jupyter Lab
+is under heavy development, and you'll want to be sure to stay up to date
+with any bug fixes.
+
+```
+conda update --all
+```
+
+
 Status
 ======
-Currently, fairly primitive. Only able to convert a MaxQuant Evidence file
-to use the Skyline peptide sequence format.
+Currently, fairly primitive. Only two bits of functionality are provided:
+
+  - Convert a MaxQuant Evidence file to the Skyline peptide sequence format
+  - Splitting a file of SRM assay transitions into multiple TSQ Quantiva
+    files, each with a uniform distribution of retention times.
 
 
 License
